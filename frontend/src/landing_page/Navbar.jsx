@@ -30,7 +30,7 @@ function Navbar() {
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-muted"
+                  class="nav-link navhover text-muted"
                   aria-current="page"
                   href="#"
                 >
@@ -38,22 +38,22 @@ function Navbar() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <a class="nav-link navhover text-muted" href="#">
                   About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <a class="nav-link navhover text-muted" href="#">
                   Product
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <a class="nav-link navhover text-muted" href="#">
                   Pricing
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <a class="nav-link navhover text-muted" href="#">
                   Support
                 </a>
               </li>
