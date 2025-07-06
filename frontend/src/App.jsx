@@ -10,11 +10,6 @@ function App() {
   return (
     <>
       <HomePage />
-      <AboutPage />
-      <PricingPage />
-      <ProductsPage />
-      <SignupPage />
-      <SupportPage />
     </>
   );
 }
