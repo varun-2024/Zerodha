@@ -88,7 +88,7 @@ function Footer() {
         <div className="mt-5 text-muted" style={{ fontSize: "14px" }}>
           <p className="text-center fs-4 text-danger">
             This is a clone website built for learning purposes and does not
-            represetent the actual website
+            represent the actual website
           </p>
           <p>
             Not Zerodha Broking Ltd.: Member of NSE​ &​ BSE – SEBI Registration

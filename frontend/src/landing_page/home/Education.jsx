@@ -2,7 +2,7 @@ import React from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 function Education() {
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container varsity">
       <div className="row">
         <div className="col-6">
           <img src="media/images/education.svg" style={{ width: "70%" }} />
@@ -14,7 +14,7 @@ function Education() {
             covering everything from the basics to advanced trading.
           </p>
           <a href="" style={{ textDecoration: "none" }}>
-            Versity <ArrowRightAltIcon />
+            Varsity <ArrowRightAltIcon />
           </a>
           <p className="mt-5">
             TradingQ&A, the most active trading and investment community in
