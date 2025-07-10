@@ -14,16 +14,16 @@ function Hero() {
           </h1>
           <input placeholder="Eg. how do I activate F&O" />
           <br />
-          <a href="" style={{ textDecoration: "none" }}>
+          <a href="" className="mr-1" style={{ textDecoration: "none" }}>
             Track account opening
           </a>
-          <a href="" style={{ textDecoration: "none" }}>
+          <a href="" className="ml-1" style={{ textDecoration: "none" }}>
             Track segment activation
           </a>
-          <a href="" style={{ textDecoration: "none" }}>
+          <a href="" className="ml-1" style={{ textDecoration: "none" }}>
             Intraday margins
           </a>
-          <a href="" style={{ textDecoration: "none" }}>
+          <a href="" className="ml-1" style={{ textDecoration: "none" }}>
             Kite user manual
           </a>
         </div>
