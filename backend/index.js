@@ -1,8 +1,13 @@
+// Express
 const express = require("express");
 const app = express();
+// Mongoose
 const mongoose = require("mongoose");
+//Dotenv
 require("dotenv").config();
-
+//CORS
+const cors = require("cors");
+// PORT & Data Base URL
 const port = process.env.PORT || 3000;
 const dbURL = process.env.MONGO_URL;
 
