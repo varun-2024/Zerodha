@@ -15,11 +15,10 @@ main()
     console.error("Error Connecting to Database!!!", err);
     process.exit(1); // Exit process on connection failure
   });
-
+// Connection Options added
 async function main() {
   try {
     await mongoose.connect(dbURL, {
-      // Optional: Add connection options for better reliability
       useNewUrlParser: true,
       useUnifiedTopology: true,
       serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of hanging
@@ -27,11 +26,11 @@ async function main() {
     });
   } catch (error) {
     console.error("Failed to connect to MongoDB:", error);
-    throw error; // Re-throw to be caught by the .catch() above
+    throw error; // Error for Connection failure
   }
 }
 
-// Optional: Handle connection events for ongoing monitoring
+// Handle connection events for ongoing monitoring
 mongoose.connection.on("connected", () => {
   console.log("Mongoose connected to MongoDB");
 });
@@ -48,7 +47,7 @@ mongoose.connection.on("disconnected", () => {
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-
+// Server Listening
 app.listen(port, () => {
   console.log("Server is Listening on Port: ", port);
 });
