@@ -11,6 +11,9 @@ const cors = require("cors");
 const port = process.env.PORT || 3000;
 const dbURL = process.env.MONGO_URL;
 
+//Temporary Data Insertion
+const { PositionsModel } = require("./model/PositionsModel");
+
 // MongoDB Connection
 main()
   .then(() => {
@@ -23,12 +26,7 @@ main()
 // Connection Options added
 async function main() {
   try {
-    await mongoose.connect(dbURL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of hanging
-      socketTimeoutMS: 45000, // Close sockets after 45s of inactivity
-    });
+    await mongoose.connect(dbURL, { serverSelectionTimeoutMS: 5000 }); // Close sockets after 45s of inactivity
   } catch (error) {
     console.error("Failed to connect to MongoDB:", error);
     throw error; // Error for Connection failure
@@ -49,7 +47,7 @@ mongoose.connection.on("disconnected", () => {
 });
 
 // Routes
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   res.send("Hello World!");
 });
 // Server Listening
